@@ -1,0 +1,93 @@
+{% extends 'template.html' %}
+{% block title %}
+<title>NC Daily | Admin</title>
+{% endblock %}
+{% block internalstyle %}
+<style>
+
+    header {
+        width:100%;
+        position: fixed;
+        top: 0;
+    }
+
+    form {
+        margin-top: 4em;
+        max-width: 400px;
+        margin-bottom: 9em;
+        min-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2em 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form input {
+        margin-bottom: 1em;
+    }
+
+    /* Box of which you enter your username and password in */
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 12px;
+        transition: border 0.5s;
+        border: 3px solid lightgrey;
+    }
+
+    input[type="text"]:hover, input[type="password"]:hover {
+        box-shadow: 0 0 4px whitesmoke;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border: 3px solid royalblue;
+        box-shadow: 0 0 0px 3px #d9e1f9;
+    }
+    input[type="submit"] {
+        padding: 1em;
+        border-radius: 12px;
+        border: 0;
+        outline: 0;
+        background: royalblue;
+        color: white;
+        font-weight: bold;
+        transition: all 0.15s;
+        cursor: pointer;
+        margin-top: 12px;
+        align-self: stretch;
+    }
+
+    input[type='submit']:hover {
+        background: #2250d9;
+    }
+
+    /* Button Onclick styles */
+    input[type="submit"]:active {
+        border-bottom: 0px;
+
+    }
+
+    form h1 {
+        text-align: center;
+        padding-bottom: 0.8em;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<form method='post' action="">
+    <h1>Admin Log-in</h1>
+    <h2>Username</h2>
+    <input type="text" name="username" id="">
+
+    <h2>Password</h2>
+    <input type="password" name="password" id="">
+
+    <input type="submit" value='Log in'name="" id="">
+    {% if credentialsWrong %}
+    <p>Username or password is incorrect ...</p>
+    {% endif %}
+</form>
+{% endblock %}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   {% block title %}
+   {% endblock %}
+
+   <!--allows for mobile scaling-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--static files-->
+   <link rel="icon" href="{{ url_for('static', filename='assets/nclogo.ico') }}" type="image/x-icon" />
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/hamburgers.css') }}">
+
+   <!--font awesome-->
+   <script src="https://kit.fontawesome.com/d7450fdcd5.js" crossorigin="anonymous"></script>
+
+ 
+  <!-- flickity  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/flickity.css') }}">
+  <script src="{{ url_for('static', filename='js/flickity.pkgd.js') }}"></script> 
+  </head>
+ <body>
+    <header>
+        <!--horizontal blue bar on top of page, nav bar, is .logo -->
+        <div class="logo">
+            <!-- mobile hamburger menu icon -- hidden on default   -->
+            <button class="hamburger hamburger--slider" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button> 
+
+            <!--hamburger icon script -->
+            <script>
+              // Look for .hamburger
+              var hamburger = document.querySelector(".hamburger");
+
+              // On click
+              hamburger.addEventListener("click", function() {
+                // Change to hamburger --> cross symbol
+                hamburger.classList.toggle("is-active");
+                var x = document.getElementById('nav-dropdown');
+
+                if (x.style.display === 'flex') {
+                      x.style.display = 'none'; // Hides it
+                  }
+                else {
+                    x.style.display = 'flex';  // Display the dropdown box
+                }
+              });
+            </script>
+
+            <!--container for the PLANE and NC DAILY-->
+            <div style='display: flex; align-items: center;'>
+                <a href="{{ url_for('home') }}"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                <a href="{{ url_for('home') }}"><p style='margin-left: 10px; margin-bottom: 0'>NC DAILY</p></a>
+            </div>
+
+            <!--links on the nav bar-->
+            <nav>
+                <a href="{{ url_for('home') }}"><li>Home</li></a>
+                <!-- <a href="{{ url_for('about') }}"><li>About</li></a> -->
+                <a href="{{ url_for('faq') }}"><li>FAQ</li></a>
+                <a href="{{ url_for('unsubscribe') }}"><li>Unsubscribe</li></a>
+            </nav>
+        </div>
+
+        <!--mobile vertical dropdown box with links-->
+        <div style='display: none;' id='nav-dropdown'>
+              <a href="{{ url_for('home') }}"><li>Home</li></a>
+              <!-- <a href="{{ url_for('about') }}"><li>About</li></a> -->
+              <a href="{{ url_for('faq') }}"><li>FAQ</li></a>
+              <a href="{{ url_for('unsubscribe') }}"><li>Unsubscribe</li></a>
+        </div>
+
+        {% block internalstyle %}
+        {% endblock %}
+    </header>
+
+    {% block precontent %}
+    {% endblock %}
+    <!--begin MAIN CONTENT-->
+    <div class="center">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!--END main content-->
+
+    {% block outside_content %}
+    {% endblock %}
+    <!--Footer content-->
+    <footer>
+      <div class="social-media-container">
+        <a href="https://www.facebook.com/newlandscoll/" target='_blank' class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/thats_so_newlands/?hl=en" target='_blank' class="fa fa-instagram"></a>
+        <a href="https://parents.newlands.school.nz/index.php/notices" target='_blank' class="fas fa-external-link-alt"></a>
+      </div>
+      
+      <p>Copyright © 2020 | Brandon Ru</p>
+      
+    </footer>
+ </body>
+</html>

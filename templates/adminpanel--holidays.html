@@ -1,0 +1,51 @@
+{% extends 'adminpanel--template.html' %}
+
+{% block content %}
+<h1>Manage when the school terms are</h1>
+
+<div class="side-by-side-div">
+    <form style='margin-top: 1em; justify-content: center; align-items: center;' action="">
+        <h4 style='margin-bottom: 1em'>Current active term intervals (inclusive)</h4>
+        {% for term in data %}
+        <h3>Term {{term['term']}}</h3>
+        <h2 style='margin-bottom: 1em;color: royalblue'>{{term['start']}} - {{term['end']}}</h2>
+        {% endfor %}
+    </form>
+
+    <form style='background: white; justify-content: center; align-items: center;' method='post' action="/change_holidays">
+        {% if request.args.get('error') == 'True' %}
+        <h3 class='unsuccessful'>An error was encountered</h3>
+        {% elif request.args.get('error') == 'False' %}
+        <h3 class='successful'>Your changes have been saved</h3>
+        {% endif %}
+        <h4 style='margin-bottom: 1em'>Select a term to edit</h4>
+        
+        <div class='radio-container'>
+            <input type="radio" name="term" value='1' id="">
+            <p>Term 1</p>
+            <input type="radio" name="term" value='2' id="">
+            <p>Term 2</p>
+            <input type="radio" name="term" value='3' id="">
+            <p>Term 3</p>
+            <input type="radio" name="term" value='4' id=""> 
+            <p>Term 4</p>
+        </div>
+        <h4 style='margin-top: 2em'>Enter dates in a DD/MM format</h4>
+        
+        <div class='termdate-container'>
+            <h3>Start Date</h3>
+            <input type="text" name="start_date" id="">
+            <h3>End Date</h3>
+            <input type="text" name="end_date" id="">
+        </div>
+
+        <input type="submit" value="Save changes">
+    </form>
+
+</div>
+
+
+
+
+<a style='display: flex; justify-content: flex-end' href='/adminpanel'><input class='back-button' value='Back to admin panel' type="submit"></a>
+{% endblock %}

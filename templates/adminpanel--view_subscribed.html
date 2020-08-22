@@ -1,0 +1,114 @@
+{% extends 'adminpanel--template.html' %}
+
+{% block internalstyle %}
+<style>
+    h4 {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    textarea {
+        border: 2px dashed grey;
+        padding: 5px;
+        background: white;
+    }
+
+    .email_list {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 1fr));
+        column-gap: 5px;
+    }
+
+    .email_list--entry {
+        background: white;
+        padding: 0.5em;
+        font-size: 0.9em;
+        transition: all 0.15s;
+    }
+
+    .email_list--entry:hover {
+        background: #ccc;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 700px) {
+        .email_list {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(auto, 1fr));
+        }
+    }
+
+
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Add emails to the mail-list</h1>
+<form method='post' action="/add_emails">
+    {% if request.args.get('empty') == 'True' %}
+    <h3 class="unsuccessful">You haven't entered anything <i class="fa fa-times" aria-hidden="true"></i></h3>
+    {% elif request.args.get('invalid_email') == 'True' %}
+    <h3 class="unsuccessful">Error entering {{request.args.get('email')}} <i class="fa fa-times" aria-hidden="true"></i></h3>
+    {% elif request.args.get('duplicate') == 'True' %}
+    <h3 class="unsuccessful">{{request.args.get("email")}} is already in the database <i class="fa fa-times" aria-hidden="true"></i></h3>
+    {% elif request.args.get('successfullyAdded') == 'True' %}
+    <h3 class="successful">Emails successfully added <i class="fa fa-tick" aria-hidden="true"></i></h3>
+
+    {% endif %}
+    <h4 style='margin-bottom: 1em'>Separate addresses with commas</h4>
+    <textarea name="emails" id="" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Add to email list">
+</form>
+
+<h1>Remove from email list</h1>
+<form style='border-radius: 0; max-width: none; width: 100%;' method='post' action="/delete_emails">
+    <h4 >Separate addresses with commas</h4>
+    <textarea name='emailScrap' id='deleteEmailInput' cols="30" rows="10" style='margin: 0 auto;'></textarea>
+
+    <input style='margin-bottom: 2em; background: red; align-self: center;' type="submit" value="Delete selected emails">
+
+    {% if request.args.get('errorDelete') == 'False' %}
+    <h3 class="successful">{{request.args.get('numberDeleted')}} emails removed successfully <i class="fa fa-check" aria-hidden="true"></i></h3>
+    {% elif request.args.get('errorDelete') == 'True' %}
+    <h3 class="unsuccessful">Error deleting emails <i class="fa fa-times" aria-hidden="true"></i></h3>
+    {% endif %}
+    <h4>Or click on the emails that you want to remove</h4>
+    <!-- container for the emails -->
+    <div class="email_list">
+        {% for email in emailList %}
+        <p class='email_list--entry'>{{email}}</p>
+        {% endfor %}
+    </div>
+
+    
+</form>
+<script>
+    var email_list_entry = document.getElementsByClassName('email_list--entry');
+
+    var input = document.querySelector('#deleteEmailInput');
+    // list to delete
+    emailScrap = [];
+
+    for (var i=0; i < email_list_entry.length; i++) {
+        email_list_entry[i].addEventListener('click', function() {
+            if (window.getComputedStyle(this).backgroundColor == 'rgb(65, 105, 225)') {
+                this.style.background = 'white';
+                this.style.color = 'black';
+
+                var index = emailScrap.indexOf(this.innerHTML);
+                
+                emailScrap.splice(index, 1);
+            } else {
+                this.style.background = 'royalblue';
+                this.style.color = 'white';
+                emailScrap.push(this.innerHTML);
+            }
+
+        input.value = emailScrap;
+        });
+    }
+
+</script>
+<a style='display: flex; justify-content: flex-end' href='/adminpanel'><input class='back-button' value='Back to admin panel' type="submit"></a>
+{% endblock %}

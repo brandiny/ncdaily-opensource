@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block title %}
+<title>NC Daily | Unsubscribe</title>
+{% endblock %}
+{% block content %}
+
+<div class="textblock">
+    <form id='subscribe' method="POST" action="">
+
+        <div style='min-width: 300px; display: flex; align-items: stretch;'>
+        {% if subscribed == 'False' %}
+        <h2>You can't unsubscribe if you haven't subscribed!</h2>
+        {% elif disabled %}
+        <h2>The app is temporarily disabled. It will be up soon again though...</h2>
+        {% else %}
+        <h1>Unsubscribe</h1>
+        {% endif %}
+            <input placeholder='Your email here' type="email" name= "email"/>
+            <input style='background: grey;' value="Goodbye :')" type = "submit">
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}

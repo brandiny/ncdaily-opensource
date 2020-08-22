@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+{% block title %}
+<title>NC Daily | Unsubscribe</title>
+{% endblock %}
+
+
+    {% block content %}
+
+    <div class="textblock">
+        <form id='subscribe' method="POST" action="">
+            {% if wrong == 'False' %}
+            <h2>Incorrect Code</h2>
+            {% endif %}
+            <p style='margin-bottom: 1em;'>We've sent a 5 digit code to your email address, {{email}}, enter it below.</p>
+            <div style='display: flex; flex-direction: column; align-items: stretch; '>
+                <input type="text" name="unsubscribe_code"/>
+                <input style='background: grey' value='Unsubscribe' type="submit">
+            </div>
+            </center>
+        </form>
+    </div>
+
+
+    {% endblock %}

@@ -1,0 +1,84 @@
+{% extends "template.html" %}
+{% block title %}
+<title>NC Daily | FAQ</title>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="textblock"><h1>Frequently Asked Questions</h1></div>
+
+<div class="masonry">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+ 
+<div class="textblock">
+  <h1>Who helped make this app?</h1><br>
+  <p>The app was made by Brandon Ru. However, obviously, the app couldn't have been done without help. Here's an incomplete list of people who have helped with the project .
+</p>
+<br>
+<ul class='credits'>
+  <div>
+    <li><strong>Vishek Kumar</strong></li>
+    <p>For his colour advice and design tips</p>
+  </div>
+  
+  <div>
+    <li><strong>Alec DeLeon</strong></li>
+    <p>For helping me with the project overall</p>
+  </div>
+  
+  <div>
+    <li><strong>Jethro Read</strong></li>
+    <p>For advice with the project overall, critical feedback, and helping code</p>
+  </div>
+  
+  <div>
+    <li><strong>Ms Sanderson and Ms McLay</strong></li>
+  <p>For pointing in the right direction to turn this idea to reality</p>
+  </div>
+  
+  <div>
+    <li><strong>Craig Milmine</strong></li>
+  <p>For helping me set up this lovely custom domain</p>
+  </div>
+
+  <div>
+    <li><strong>Senior Leadership Team</strong></li>
+  <p>For the opportunity to implement this in the school</p>
+  </div>
+  
+</ul>
+</div>
+
+<script src="{{ url_for('static', filename='js/masonry-faq.js') }}"></script>
+
+<div class="textblock">
+  <h1>Why was this app made?</h1>
+  <br>
+  <p>The goal behind this app was to streamline the way we check the notices and make it easier. We noticed a lot of students were frustrated with the current system, so we decided to take action.</p>
+</div>
+<!-- javascript -->
+<script>
+    
+    </script>
+
+<div class="textblock">
+    <h1>Contact Us</h1>
+    <br>
+    <p>
+      Occasionally, things may go awry (as the best laid plans do) so feel free to contact us at anytime. If you are a school admin and want this implemented for your school, contact us also!
+    </p>
+    <br>
+
+    <div class="contact-details">
+      <h2><i class="fa fa-envelope" aria-hidden="true"></i><a href='mailto:ncdaily@newlands.school.nz'>ncdaily@newlands.school.nz</a>
+      </h2>
+    </div>
+</div>
+{% endblock %}

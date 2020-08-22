@@ -1,0 +1,51 @@
+{% extends 'adminpanel--template.html' %}
+
+{% block content %}
+<h1>Admin Options</h1>
+<div class='account-options'>
+    <h2>Account Options</h2>
+    <div class='account-options--content'>
+        <a href='/adminpanel/changepassword'><li>Change account password</li></a>
+        <a href="/logout"><li>Logout</li></a>
+        
+    </div>
+</div>
+
+<div class='app-options'>
+    <h2>Application options</h2>
+    
+    <div class='app-options--content'>
+        <a href="/adminpanel/holidays"><li>Change when the app will turn off</li></a>
+        
+        <a href="/adminpanel/view_subscribed"><li>View and manage subscriptions</li></a>
+        
+        <a href="/adminpanel/disable"><li>Disable the app temporarily</li></a>
+        
+    </div>
+</div>
+
+<div class='statistics'>
+    <h2>Application Statistics</h2>
+    <div class='statistics--content'>
+        <li>Is the app on?</li>
+        {% if appON == 'True' %}
+        <li style='font-size: 1.6em; color: #69e141'>Yes, it will turn off on {{holiday_startdate}}</li>
+        
+        {% elif appON == 'False' %}
+        <li style='font-size: 1.6em;color: #e14169'>No, it will be back on {{holiday_enddate}}</li>
+        {% endif %}
+
+        <li>Total subscribers: </li>
+        <li style='padding: 5px 9px; border-radius: 1.5em;font-size: 1.6em; color: white; background-color: royalblue;'>{{totalSubscribers}}</li>
+
+        
+        <li>Total emails sent: </li>
+        <li style='font-size: 1.6em; color: #444'>{{emails_sent}}</li>
+        <li>Time it takes to loop through mail-list: </li>
+        <li style='font-size: 1.6em; color: #444'>{{loop_time}}</li>
+        <li>Total uptime of the app: </li>
+        <li style='font-size: 1.6em; color: #444'>{{uptime_days}}</li>
+        
+    </div>
+</div>
+{% endblock %}

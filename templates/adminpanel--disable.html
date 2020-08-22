@@ -1,0 +1,16 @@
+{% extends 'adminpanel--template.html' %}
+
+{% block content %}
+<h1>Disable the app</h1>
+<form method='POST' action="">
+    <h2 align='center'>Toggle the app off indefinitely</h2>
+    {% if appON %}
+    <input style='background: #e14169' type="submit" name='result' value="Turn off">
+    {% else %}
+    <input style='background: #69e141;' type="submit" name='result' value="Turn on">
+    {% endif %}
+    <h4 style='margin-top: 1em'>If you are looking to turn the app off instead for the holidays - <u><a href="/adminpanel/holidays">click here.</a></u></h4>
+</form>
+
+<a style='display: flex; justify-content: flex-end' href='/adminpanel'><input class='back-button' value='Back to admin panel' type="submit"></a>
+{% endblock %}

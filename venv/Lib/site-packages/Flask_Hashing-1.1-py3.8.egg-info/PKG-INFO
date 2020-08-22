@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: Flask-Hashing
+Version: 1.1
+Summary: Easy hashing of data in Flask
+Home-page: https://github.com/ThaWeatherman/flask-hashing
+Author: Sean Beck
+Author-email: seanmckaybeck@gmail.com
+License: MIT
+Description: 
+        Flask-Hashing
+        -------------
+        
+        This is a Flask extension that provides utility functions
+        for hashing data within a Flask application.
+        
+        Flask-Bcrypt restricts you to using bcrypt. What if you want
+        to use a different hash function? This extension provides access
+        to other commonly used hash functions such as SHA256.
+        
+        Links
+        -----
+        
+        
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

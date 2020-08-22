@@ -1,0 +1,55 @@
+{% extends "template.html" %}
+
+{% block title %}
+<title>NC Daily | About</title>
+{% endblock %}
+
+{% block content %}
+<div class='features'>
+    <h1 style='text-align: center'>Features</h1>
+    <h2>Sorting</h2>
+    <p>The notices are split into two sections. New notices are the <i>unique</i> notices for the day. Past notices are the <i>double-ups.</i></p>
+    <img src='{{ url_for("static", filename="assets/sorted.svg") }}'>
+
+    <h2>Email Button</h2>
+    <p>This will email whoever made the notice. It autofills the subject and recepient fields so you save time.</p>
+    <img src='{{ url_for("static", filename="assets/email.svg") }}'>
+
+    <h2>Calendar Button</h2>
+    <p>This will add an event to your calendar with the subject and day filled out. At the moment the time is always 8.15am, but this will be fixed soon.</p>
+    <img src='{{ url_for("static", filename="assets/calendar.svg") }}'>
+
+    <h2>Search Tool</h2>
+    <p>Use Gmail to search for time, day, location, teacher and event of the notice.</p>
+    <img src='{{ url_for("static", filename="assets/search.svg") }}'>
+</div>
+
+<!-- 
+<div class="textblock">
+    <h2>How does this app work?</h2>
+    <p>The app is essentially a stylised web scraper/aggregator. It is built with Python3, HTML5 and CSS3. It takes the notices from the parent portal and reformats them. If you are interested in the code, it is up on Github.</p>
+</div>
+
+<div class="textblock">
+    <h2>Who helped make this app?</h2>
+    <p>Most of the development was from <strong>Brandon Ru</strong> .  The goal was to streamline the way we check the notices and make it easier (and to save clicks).
+    </p>
+    <br>
+    <p style='margin-bottom: 1.5em;'>Special thanks to the people below who have had a huge impact on the course of the project</p>
+    <ul>
+        <li><strong>Vishek Kumar</strong></li>
+        <p style='margin-bottom: 1em'>For his colour advice and design tips.</p>
+
+        <li><strong>Alec DeLeon</strong></li>
+        <p style='margin-bottom: 1em'>For advice with the project overall.</p>
+
+        <li><strong>Ms Sanderson and Ms McLay</strong></li>
+        <p style='margin-bottom: 1em'>For pointing me in the right direction to turn this idea to reality.</p>
+
+        <li><strong>Senior Leadership Team</strong></li>
+        <p style='margin-bottom: 1em'>For the opportunity to implement this in the school</p>
+    </ul>
+</div> -->
+
+
+{% endblock %}

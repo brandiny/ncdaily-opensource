@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block content %}
+<style>
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+<div id="thankyou">
+    <div class="textblock">
+        <h1 align='center' style='font-weight: 400;'>Thanks for joining NC Daily</h1>
+        <br>
+        <br>
+        <p>Today's notices have been sent to you, <strong>{{email}}</strong>, try it out now!</p>
+        <br>
+        <p><span style='font-weight: bolder;text-decoration: underline;'>Check the spam folder</span> and make sure to check the 'mark as not spam' so the app can do it's job.</p>
+        <a href='/'><input value='Take me back to home page' type="submit"></a>
+    </div> 
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    
+    <!--allows for mobile scaling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--static files-->
+    <link rel="icon" href="{{ url_for('static', filename='assets/nclogo.ico') }}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hamburgers.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/d7450fdcd5.js" crossorigin="anonymous"></script>
+
+    <title>Admin Panel</title>
+    {% block internalstyle %}
+    {% endblock %}
+</head>
+
+
+<body>
+    <header>
+        <!--horizontal blue bar on top of page, nav bar, is .logo -->
+        <div class="logo">
+            <!--container for the PLANE and NC DAILY-->
+            <div style='display: flex; align-items: center;'>
+                <a href="{{ url_for('home') }}"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                <a href="{{ url_for('admin') }}"><p style='margin-left: 10px; margin-bottom: 0'>Admin Panel</p></a>
+            </div>
+
+            <!--links on the nav bar-->
+            <nav>
+                <a href="/logout">Logout</a>
+                <a href="{{ url_for('home') }}"><li>Notices</li></a>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+    </body>
+</html>
