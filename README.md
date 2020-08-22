@@ -40,12 +40,10 @@ Has all of the html served by Flask - template.html is the base file
 Is the virtual environment for python - essentially the external packages that the program uses packaged up into a folder with python 3.7 I think.
 
 ## Other files
-#### Procfile
-heroku management
 #### quotes.json
 Random quotation data
 #### requirements.txt
-heroku management
+all packages used
 #### login.txt
 passwords for the driver account
 
