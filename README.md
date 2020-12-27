@@ -1,50 +1,67 @@
 # NC Daily
-Notices aggregator for Kamar Website. Code is in a continuous deployment environment, so any changes made to master branch will automatically deploy to ncdaily.herokuapp.com
+NC Daily is a notices aggregator for the Kamar Parent Portal notices page.
 
-## Python files
-#### credentials.py 
-Handles the credentials and global variables.
-
-#### dateformatter.py
-Handles Timezone and date string conversion stuff.
-
-#### emailformatter.py
-Writes the whole newsletter and compliles it into a string
-
-#### main.py
-Sends the email to the database list of emails. 
-
-#### makegcal.py
-Handles the creation of the Google calendar link and the mail:to link
-
-#### newsletter.py
-Sends the welcome message and is also used to test the email 
+The noticeboard of a school is crucial. It serves as a hub for student participation and information dissemination.  However, there is an inherent flaw in the concept of a "noticeboard": cognitive friction. Many students frequently forget to check the notices and as a result, don't fully participate.
 
 
+Instead of students having to remember to check the school noticeboard, NC Daily sends out a collated email newsletter to all of its subscribers. Arriving at 7.30am in each student's inbox, this process minimises the cognitive friction involved.
 
-#### scraper.py
-Handles the web scraping and sorting of the data from the parent portal
-#### server.py
-WEB APP, flask backend for the website
+# Features
+In addition to the notices, NC Daily offers extra features.
+* Notices can be added to Google Calendar in one click
+* Notices are sorted chronologically.
+* Notice authors can be emailed using a mail:to link
+* Daily motivational quotes
+* Searchable, using email search function.
+
+# Hosting
+This web app is hosted using Heroku, and which builds from source code located on Github. The maintanence cost of the app is $0.00 per month, and is highly affordable.
+
+
+# Explanation of important files
+#### Python files
+##### credentials.py 
+Handles all sensitive information (credentials and blacklists)
+
+##### dateformatter.py
+Manages timezone changes and date string manipulation.
+
+##### emailformatter.py
+Compiles the contents of the newsletter into an HTML string.
+
+##### main.py
+Pilot file which sends out the newsletter to email pool.
+
+##### makegcal.py
+Handles the construction of the Google calendar link and the mail:to link
+
+##### newsletter.py
+Sends a single welcome newsletter to new subscribers.
 
 
 
+##### scraper.py
+Responsible for web scraping and sorting the data from the parent portal website.
 
+##### server.py
+The flask backend for the web application.
 
-## Folders
-#### static/
-Has all of the static files: CSS, JS (no external JS at the moment) and pictures
-#### templates/
-Has all of the html served by Flask - template.html is the base file
-#### venv/
-Is the virtual environment for python - essentially the external packages that the program uses packaged up into a folder with python 3.7 I think.
+#### Folders
+##### static/
+Has all of the static files: CSS, JS and pictures
 
-## Other files
-#### quotes.json
-Random quotation data
-#### requirements.txt
-all packages used
-#### login.txt
-passwords for the driver account
+##### templates/
+Has all of the HTML served by Flask (website files)
+
+##### venv/
+This is the virtual environment for this python project -  the external packages that the program uses packaged up into a folder with python 3.7.
+
+#### Other files
+##### quotes.json
+A large compilation of quote JSON objects.
+
+##### requirements.txt
+A pip freeze of all of the packages required in this project
+
 
 
