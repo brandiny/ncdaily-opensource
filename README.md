@@ -20,8 +20,7 @@ This web app is hosted using Heroku, and which builds from source code located o
 
 # Explanation of important files
 #### Python files
-##### credentials.py 
-Handles all sensitive information (credentials and blacklists)
+<strong>credentials.py</strong> Handles all sensitive information (credentials and blacklists)
 
 ##### dateformatter.py
 Manages timezone changes and date string manipulation.
