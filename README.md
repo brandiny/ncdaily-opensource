@@ -68,7 +68,6 @@ This web app is hosted using Heroku, and which builds from source code located o
     </tr>
 </table>
 
-
 #### Other files
 ##### quotes.json
 A large compilation of quote JSON objects.
