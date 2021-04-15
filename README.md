@@ -20,10 +20,11 @@ This web app is hosted using Heroku, and which builds from source code located o
 
 # Explanation of important files
 
+### Python Files
 <table>
     <tr>
         <td>credentials.py</td>
-        <td>Handles all sensitive information (credentials and blacklists)</td>
+        <td>Handles the sensitive information (credentials and blacklists)</td>
     </tr>
     <tr>
         <td>emailformatter.py</td>
@@ -39,7 +40,7 @@ This web app is hosted using Heroku, and which builds from source code located o
     </tr>
     <tr>
         <td>newsletter.py</td>
-        <td>Sends a single welcome newsletter to new subscribers.</td>
+        <td>Sends a single welcome newsletter to a new subscriber.</td>
     </tr>
     <tr>
         <td>scraper.py</td>
@@ -51,15 +52,22 @@ This web app is hosted using Heroku, and which builds from source code located o
     </tr>
 </table>
    
-#### Folders
-##### static/
-Has all of the static files: CSS, JS and pictures
+### Folders
+<table>
+    <tr>
+        <td>static/</td>
+        <td>Has all of the static files: CSS, JS and pictures</td>
+    </tr>
+    <tr>
+        <td>templates/</td>
+        <td>Has all of the HTML served by Flask (website files)</td>
+    </tr>
+    <tr>
+        <td>templates/</td>
+        <td>Has all of the HTML served by Flask (website files)</td>
+    </tr>
+</table>
 
-##### templates/
-Has all of the HTML served by Flask (website files)
-
-##### venv/
-This is the virtual environment for this python project -  the external packages that the program uses packaged up into a folder with python 3.7.
 
 #### Other files
 ##### quotes.json
