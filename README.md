@@ -62,18 +62,19 @@ This web app is hosted using Heroku, and which builds from source code located o
         <td>templates/</td>
         <td>Has all of the HTML served by Flask (website files)</td>
     </tr>
-    <tr>
-        <td>templates/</td>
-        <td>Has all of the HTML served by Flask (website files)</td>
-    </tr>
 </table>
 
-#### Other files
-##### quotes.json
-A large compilation of quote JSON objects.
-
-##### requirements.txt
-A pip freeze of all of the packages required in this project
+### Other files
+<table>
+    <tr>
+        <td>quotes.json</td>
+        <td>A large compilation of quote JSON objects.</td>
+    </tr>
+    <tr>
+        <td>requirements.txt</td>
+        <td>A pip freeze of all of the packages required in this project</td>
+    </tr>
+</table>
 
 
 
