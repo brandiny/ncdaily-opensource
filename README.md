@@ -1,10 +1,9 @@
 # NC Daily
-NC Daily is a notices aggregator for the Kamar Parent Portal notices page.
+NC Daily is a notices aggregator for the Kamar Parent Portal notices page, <a href="ncdaily.newlands.school.nz">find it here!</a>
 
-The noticeboard of a school is crucial. It serves as a hub for student participation and information dissemination.  However, there is an inherent flaw in the concept of a "noticeboard": cognitive friction. Many students frequently forget to check the notices and as a result, don't fully participate.
+The noticeboard of a school is crucial. It is a hub for student information and directly impacts participation rates. However, many students frequently forget to check the notices and as a result, don't fully participate.
 
-
-Instead of students having to remember to check the school noticeboard, NC Daily sends out a collated email newsletter to all of its subscribers. Arriving at 7.30am in each student's inbox, this process minimises the cognitive friction involved.
+With NC Daily, students no longer have to actively remember. NC Daily sends out a fully featured email newsletter to all of its subscribers every morning.
 
 # Features
 In addition to the notices, NC Daily offers extra features.
@@ -16,7 +15,6 @@ In addition to the notices, NC Daily offers extra features.
 
 # Hosting
 This web app is hosted using Heroku, and which builds from source code located on Github. The maintanence cost of the app is $0.00 per month, and is highly affordable.
-
 
 # Explanation of important files
 
