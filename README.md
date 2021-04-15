@@ -20,7 +20,7 @@ This web app is hosted using Heroku, and which builds from source code located o
 
 # Explanation of important files
 
-<tbody>
+<table>
     <tr>
         <td>credentials.py</td>
         <td>Handles all sensitive information (credentials and blacklists)</td>
@@ -49,7 +49,7 @@ This web app is hosted using Heroku, and which builds from source code located o
         <td>server.py</td>
         <td>The flask backend for the web application.</td>
     </tr>
-</tbody>
+</table>
    
 #### Folders
 ##### static/
