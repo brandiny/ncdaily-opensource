@@ -25,31 +25,43 @@ This web app is hosted using Heroku, and which builds from source code located o
         <td>credentials.py</td>
         <td>Handles all sensitive information (credentials and blacklists)</td>
     </tr>
+
+    <tr>
+        <td>dateformatter.py</td>
+        <td>Manages timezone changes and date string manipulation.</td>
+    </tr>
+
+    <tr>
+        <td>emailformatter.py</td>
+        <td>Compiles the contents of the newsletter into an HTML string.</td>
+    </tr>
+
+    <tr>
+        <td>main.py</td>
+        <td>Driver program which sends out the newsletter to email pool.</td>
+    </tr>
+
+    <tr>
+        <td>makegcal.py</td>
+        <td>Handles the construction of the Google calendar link and the mail:to link</td>
+    </tr>
+
+    <tr>
+        <td>newsletter.py</td>
+        <td>Sends a single welcome newsletter to new subscribers.</td>
+    </tr>
+    
+    <tr>
+        <td>scraper.py</td>
+        <td>Responsible for web scraping and sorting the data from the parent portal website.</td>
+    </tr>
+
+    <tr>
+        <td>server.py</td>
+        <td>The flask backend for the web application.</td>
+    </tr>
+
 </table>
-
-
-##### dateformatter.py
-Manages timezone changes and date string manipulation.
-
-##### emailformatter.py
-Compiles the contents of the newsletter into an HTML string.
-
-##### main.py
-Pilot file which sends out the newsletter to email pool.
-
-##### makegcal.py
-Handles the construction of the Google calendar link and the mail:to link
-
-##### newsletter.py
-Sends a single welcome newsletter to new subscribers.
-
-
-
-##### scraper.py
-Responsible for web scraping and sorting the data from the parent portal website.
-
-##### server.py
-The flask backend for the web application.
 
 #### Folders
 ##### static/
