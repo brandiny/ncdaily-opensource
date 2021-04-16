@@ -5,6 +5,15 @@ The noticeboard of a school is a hub for student information. However, many stud
 
 NC Daily sends out a fully featured email newsletter to all of its subscribers every morning, solving this problem.
 
+# Languages
+<p align="center">
+  <a href="https://isocpp.org"                                    ><img alt="JavaScript" src="https://img.shields.io/badge/Animations-JavaScript-6300c6"       /></a>
+  <a href="https://www.python.org"                                ><img alt="HTML&CSS"     src="https://img.shields.io/badge/Frontend-HTML\/CSS-black"    /></a>
+  <a href="https://go.java"                                       ><img alt="Python"     src="https://img.shields.io/badge/Backend-Python-0063c6"         /></a>
+  <a href="https://www.typescriptlang.org"                        ><img alt="mySQL"      src="https://img.shields.io/badge/DB-mySQL-0000c6"   /></a>
+  
+</p>
+
 # Features
 In addition to the notices, NC Daily offers extra features.
 * Notices can be added to Google Calendar in one click
