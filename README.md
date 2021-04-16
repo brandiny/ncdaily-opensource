@@ -1,5 +1,5 @@
 # NC Daily
-NC Daily is a notices aggregator for the Kamar Parent Portal notices page, <a href="ncdaily.newlands.school.nz">find it here!</a>
+NC Daily is a notices aggregator for the Kamar Parent Portal notices page, <a href="https://ncdaily.newlands.school.nz/">find it here!</a>
 
 The noticeboard of a school is a hub for student information. However, many students frequently forget to check the notices and as a result, don't fully participate. 
 
