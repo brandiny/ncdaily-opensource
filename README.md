@@ -75,6 +75,6 @@ This web app is hosted using Heroku, and builds from this repository. The mainta
 </table>
 
 ### Snippets of newsletter photo
-<img src=>
+<img src="https://github.com/brandiny/ncdaily-opensource/blob/master/static/assets/ai/example_snip.PNG" width="500">
 
 
