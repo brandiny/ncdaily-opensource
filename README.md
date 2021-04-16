@@ -14,8 +14,6 @@ NC Daily sends out a fully featured email newsletter to all of its subscribers e
   <a href="https://www.javascript.com/"><img alt="JavaScript" src="https://img.shields.io/badge/Animations-JavaScript-6300c6"/></a>
   <a href="https://www.heroku.com/"><img alt="heroku" src="https://img.shields.io/badge/Hosting-Heroku-green"/></a>
 </p>
-<br>
-
 
 # Features
 In addition to the notices, NC Daily offers extra features.
@@ -24,9 +22,6 @@ In addition to the notices, NC Daily offers extra features.
 * Notice authors can be emailed using a mail:to link
 * Daily motivational quotes
 * Searchable notices, using email search function.
-
-# Hosting
-This web app is hosted using Heroku, and builds from this repository. The maintanence cost of the app is $0.00 per month.
 
 # Explanation of important files
 
