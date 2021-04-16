@@ -6,7 +6,7 @@ The noticeboard of a school is a hub for student information. However, many stud
 NC Daily sends out a fully featured email newsletter to all of its subscribers every morning, solving this problem.
 
 # Languages
-<p align="center">Fullstack Flask web app, fully automated ⚙️, with zero maintanence.</p>
+<p align="center">Fullstack Flask web app 🐍. Fully automated ⚙️. Zero maintanence cost. 💰</p>
 <p align="center">
   <a href="https://www.w3.org/standards/webdesign/htmlcss#:~:text=HTML%20(the%20Hypertext%20Markup%20Language,for%20a%20variety%20of%20devices."><img alt="HTML&CSS" src="https://img.shields.io/badge/Frontend-HTML/CSS-black"/></a>
   <a href="https://flask.palletsprojects.com/en/1.1.x/"><img alt="Python"src="https://img.shields.io/badge/Backend-Python(Flask)-0063c6"/></a>
