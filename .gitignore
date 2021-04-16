@@ -5,3 +5,8 @@ __pycache__/
 
 # Pycharm file
 .idea/
+
+
+# Virtual env
+.vscode/
+env/

@@ -1,9 +1,9 @@
 # NC Daily
 NC Daily is a notices aggregator for the Kamar Parent Portal notices page, <a href="ncdaily.newlands.school.nz">find it here!</a>
 
-The noticeboard of a school is crucial. It is a hub for student information and directly impacts participation rates. However, many students frequently forget to check the notices and as a result, don't fully participate.
+The noticeboard of a school is a hub for student information. However, many students frequently forget to check the notices and as a result, don't fully participate. 
 
-With NC Daily, students no longer have to actively remember. NC Daily sends out a fully featured email newsletter to all of its subscribers every morning.
+NC Daily sends out a fully featured email newsletter to all of its subscribers every morning, solving this problem.
 
 # Features
 In addition to the notices, NC Daily offers extra features.
@@ -11,10 +11,10 @@ In addition to the notices, NC Daily offers extra features.
 * Notices are sorted chronologically.
 * Notice authors can be emailed using a mail:to link
 * Daily motivational quotes
-* Searchable, using email search function.
+* Searchable notices, using email search function.
 
 # Hosting
-This web app is hosted using Heroku, and which builds from source code located on Github. The maintanence cost of the app is $0.00 per month, and is highly affordable.
+This web app is hosted using Heroku, and builds from this repository. The maintanence cost of the app is $0.00 per month.
 
 # Explanation of important files
 
@@ -74,5 +74,228 @@ This web app is hosted using Heroku, and which builds from source code located o
     </tr>
 </table>
 
+### Snippets of newsletter
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+<body id="body" style="font-family:Arial; margin:0 auto; max-width:650px; padding:0">
+<div class="topwrapper" style="margin-left:2.5%">
+<div class="topsection" style="background:linear-gradient(90deg, #3e3874 51%, #5c3874 88%); display:inline-block; padding-bottom:1%; padding-right:3px; width:97%" width="97%">
+	<h1 id="title" style='color:#fff; font-family:"Open Sans", sans-serif; font-size:45px; font-weight:lighter; margin:0; padding:2% 0 0 3%'>Friday, Apr 16</h1>
+	<p id="quote" style='margin:0; color:#fff; font-family:"Open Sans", sans-serif; font-weight:lighter; padding:2% 0 1% 3%'>"We are the leaves of one branch, the drops of one sea, the flowers of one garden." - Jean Lacordaire</p>
+</div>
+</div>
+
+<div class="wrapper" style="margin-left:2.5%">
+<div class="new-notices" style="background:linear-gradient(90deg, #f05 24%, #f43923 88%); margin-bottom:20px; margin-top:20px; padding-bottom:2%; padding-right:3px; text-align:center; width:97%" align="center" width="97%">
+	<h1 id="title-secondary" style='color:#fff; font-family:"Open Sans", sans-serif; font-size:45px; font-weight:lighter; margin:0; padding:2% 0 0 3%'>New Notices
+</h1></div>
+<div class="notice-new" style="background-color:#ebecf1; border-left:4px solid #f43923; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">There are no new notices today</h2><p style="margin:0; margin-top:3px"></p>
+</div><div class="past-notices" style="background:linear-gradient(90deg, #0ac 24%, #00d5ff 88%); margin-bottom:20px; margin-top:20px; padding-bottom:2%; padding-right:3px; text-align:center; width:97%" align="center" width="97%">
+	<h1 id="title-secondary" style='color:#fff; font-family:"Open Sans", sans-serif; font-size:45px; font-weight:lighter; margin:0; padding:2% 0 0 3%'>Past Notices
+</h1></div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">APPOINTMENTS</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">APPOINTMENTS - If you have an appointment requires a courtesy call, email (absences@newlands.school.nz) OR note from the parent/caregiver. Students need to come to the Student Reception to record their attendance via the office ladies.</p>
+    <div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Appointments" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Appointments&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">ATTENDANCE / ABSENCES</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">Parent/caregivers - You are required to email - absences@newlands.school.nz - directly OR phone (04) 4734136 before 9.30 am each day. Students need to notify the office ladies to enter their arrival time.<br><br>Please note - students are required to be outside their Period 1 class room when the bell rings. If you are after this time, you will be required to go to the Student Reception to register arrival time.<br><br>Students - can only sign out/in for yourself and not for another student. Also notify the Office Ladies if you are signing out for anything other than study.<br><br> 
+    </p><div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Attendance%20/%20Absences" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Attendance%20/%20Absences&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">CASUAL ATTIRE DAY - FRIDAY 16 APRIL</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">MI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">$2.00 - proceeds going to School Council projects.</p>
+    <div style="text-align: right;"><a href="mailto:mi@newlands.school.nz?subject=Casual%20Attire%20Day%20-%20Friday%2016%20April" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Casual%20Attire%20Day%20-%20Friday%2016%20April&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">I/H PICTIONARY</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">MI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">Are you ready to get your art skills on! Come along to Pictionary: Celebrity this Friday Lunchtime in the DPR, many familiar and famous faces will be drawn and a fun atmosphere to go along with it! There will cool prizes and house points up for grabs! If you want to participate in this event, contact your year level house reps for 5 people will represent your houses so choose any keen artists!</p>
+    <div style="text-align: right;"><a href="mailto:mi@newlands.school.nz?subject=I/H%20Pictionary" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=I/H%20Pictionary&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">LOST PROPERTY - TERM 1</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">There is a table set up with some of these items, if unclaimed at the end of this week - they will be taken to the Op shop.<br><br>Received at the Student Reception so far - "Alogic" computer cord; re-cycled blue/white jacket; x1 PE shirt; various jackets branded; x1 cordless mouse; x2 USB cords/chargers; multiple/various drink bottles &amp; mug; x2 jackets; x2 red snapper cards &amp; x1 green snapper card; x2 school jersey; x1 toiletry bag with various items from ear rings to plasters; various Tabloid items; x3 bank card; x2 rings; x1 empty wallet; x2 pencil cases; x1 car Toyota keys; x1 PE hoodies; various PE shorts; x1 ear pod case; x1 ear phone; x1 mobile phone; x1 ear ring; x2 car/house keys; x1 glass case; x1 ring with coloured stone; multiple school shoes; multiple sneakers; x1 house rep badge; <br><br>PE Dept - multiple hoodies/jackets, drink bottles, school beanies,<br><br>Updated: 14/4/2021<br><br> 
+    </p><div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Lost%20Property%20-%20Term%201" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Lost%20Property%20-%20Term%201&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">MORNING DROP OFFS / AFTERNOON PICK UPS</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">Students - please remind parent/s that the drop off and pick you up point is on Bracken Road or close to this site. This is due to the congestion from the taxi vans/caregiver pick ups and safety for the LSC students.</p>
+    <div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Morning%20Drop%20Offs%20/%20Afternoon%20Pick%20Ups" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Morning%20Drop%20Offs%20/%20Afternoon%20Pick%20Ups&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">SICK / UNWELL</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">Student - If you are unwell please come to the Student Reception asap. The office ladies will contact the parents/caregiver directly for a pickup. Students are required to sign out via the office ladies before being released. If you have contacted your parents directly, please ask them to contact the office to confirm sign out.<br><br>Staff - If a student in your class is unwell, please write a note with your initial and send the student to the Student Reception asap.<br><br>Parent - If your student has made contact with you from school re: feeling unwell, please contact the College (04) 473 4136 immediately to confirm the student is signing out (via the office ladies).<br><br> 
+    </p><div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Sick%20/%20Unwell" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Sick%20/%20Unwell&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">UNIFORM - GROOMING</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">HAIR - Hair, beards and moustaches must be clean, tidy and of a natural colour. No extreme styles as determined by the Principal.<br>MAKE UP - May not be worn.<br>NAIL POLISH - May not be worn.<br>PERSONAL ADORNMENT - To be restricted to a watch, one plain ring and one plain chain to be worn under the uniform. Either one plain stud or sleeper may be worn in each ear. There is to be no other body piercing.<br>BLUE SHIRTS - To be tucked in.<br><br></p>
+    <div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Uniform%20-%20Grooming" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Uniform%20-%20Grooming&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">JOHNSONVILLE LIBRARY WORKSHOP (HOLS)</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">MW </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">Coming up these school holidays, 27 April to 1 May at Johnsonville Library! Our Nature Heroes: Board Game Creation Workshop is for ages 9-15 and is five days of learning about design concepts, creative problem solving and using HIVE makerspace equipment to create an original board game! The workshop is free and places are limited, find out more on our Events Calendar: https://bit.ly/3mHGpEO</p>
+    <div style="text-align: right;"><a href="mailto:mw@newlands.school.nz?subject=Johnsonville%20Library%20Workshop%20(Hols)" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Johnsonville%20Library%20Workshop%20(Hols)&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">GIRLBOSS OPPORTUNITY FOR FEMALES PASSIONATE IN HEALTHCARE</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">TM </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">An awesome GIRLBOSS opportunity for our female students aged 15 - 18 with a passion in Healthcare. <br>Online Career Accelerator programme during the second week of the holidays.<br>GirlBoss events have been very popular with our students in the past and they have raved about the programmes, mentors and resources.<br>Don't delay and keep me in the loop if you apply! Full scholarships available for Māori and Pasifika students.<br><br> 
+    </p><div style="text-align: right;"><a href="mailto:tm@newlands.school.nz?subject=Girlboss%20Opportunity%20For%20Females%20Passionate%20In%20Healthcare" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Girlboss%20Opportunity%20For%20Females%20Passionate%20In%20Healthcare&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">LAW AT OTAGO EVENT</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">TM </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">The Law @ Otago Event is targeted to year 12 and 13 students and parents. It is an opportunity to meet law lecturers and hear about studying law at Otago! Hear about the varied career opportunities it offers to everyone who takes up the degree. You’ll learn what a Law degree involves and why it’s a great choice for university study. Law is training for life! Practical examples of how we teach the law will also feature in the session. If you would like to register: individual students can fill in the survey found on the web-page https://www.otago.ac.nz/law/news/careers/</p>
+    <div style="text-align: right;"><a href="mailto:tm@newlands.school.nz?subject=Law%20At%20Otago%20Event" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Law%20At%20Otago%20Event&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">MASSEY UNIVERSITY COLLEGE OF CREATIVE ARTS EXPERIENCE DAY</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">TM </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">The College of Creative Arts has a student Experience Day on Wednesday 28th April, on campus in Wellington. There will be two Experience Days during the year, the next one being on the 8th June (registrations for that one will open in May).<br><br>Description : Experience day is a one-day on campus experience where students can choose ONE workshop from design, fine arts, film or music. The purpose is to introduce students to the CoCA campus and allow students to engage with the act of making, see the facilities and meet the staff.<br><br>Target Audience: Year 12 and 13 high school students interested in art, design, film, and music. <br><br>How to register and schedule<br>Students are asked to register through Eventbrite https://experiencedaycoca.eventbrite.co.nz/?aff=web<br>The schedule is also on the Eventbrite listing.<br>Registrations close on 21 April.<br>Spaces are limited to approximately 20 per workshop.<br>Accommodation tours and portfolio reviews will be available at the end of the day.<br><br> 
+    </p><div style="text-align: right;"><a href="mailto:tm@newlands.school.nz?subject=Massey%20University%20College%20Of%20Creative%20Arts%20Experience%20Day" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Massey%20University%20College%20Of%20Creative%20Arts%20Experience%20Day&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">YOUTH WELLBEING AND HEALTH CAREERS EXPO 13 MAY 2021</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">TM </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">The health and wellbeing sector needs more young people in the workforce to combat the existing workforce shortages. and are running a careers expo at Te Rauparaha Arena, Porirua, Thursday 13 May 2021 for Years 11, 12, 13 students.<br><br>The health and wellbeing sectors offer many exciting and rewarding career opportunities for young people, who want to make both a career, and a difference. These sectors cover the likes of healthcare, social and community services, mental health, disability support, aged care, and youth work. Common across all the sectors is the increasingly challenging workforce shortages, and the need to attract younger people into their workforces.<br><br>Students interested in the following should attend;<br>* Pursuing a career within health and wellbeing, and earning as they’re learning.<br>* Helping people recover from illness or injury to live independent lives.<br>* Caring for the aged and vulnerable in the community.<br>* Providing quality service and patient care.<br>* Working with other young people to reach their full potential<br><br>If you are interested in attending this Careers event please complete the form using the link https://forms.gle/CJHRbwykSggrEuAH7<br>Selected students will be notified at the beginning of term 2.<br><br></p>
+    <div style="text-align: right;"><a href="mailto:tm@newlands.school.nz?subject=Youth%20Wellbeing%20And%20Health%20Careers%20Expo%2013%20May%202021" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Youth%20Wellbeing%20And%20Health%20Careers%20Expo%2013%20May%202021&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">FIRST FOUNDATION SCHOLARSHIPS FOR YEAR 12 STUDENTS</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">TM </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">First Foundation Scholarships are for 3 years offering financial assistance, mentoring paid work experience over a 3 year period including the first two years of University.  The first year of support is to help the student aspire to university with mentoring.<br>The Priorities for scholarships; Year 12, First in Family, Scholars meeting the household income, Endorsed merit or excellent at level one <br>There are several stages to the application process and the first stage closes 4 May.  All that is required for stage one is a cover letter and a template is provided. For more information go to http://www.firstfoundation.org.nz/<br>Remember to talk to your form teacher and/or Dean to let them know that you are considering applying.  If you make it through to Stage two you will need their school support.<br><br></p>
+    <div style="text-align: right;"><a href="mailto:tm@newlands.school.nz?subject=First%20Foundation%20Scholarships%20For%20Year%2012%20Students" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=First%20Foundation%20Scholarships%20For%20Year%2012%20Students&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+
+<div class="notice-past" style="background-color:#ebecf1; border-left:4px solid #0ac; margin-bottom:20px; padding:1%; width:95%" bgcolor="#ebecf1" width="95%">
+	<h2 class="notice-title" style="margin:0; display:inline-block; width:70%" width="70%">YEAR 13 STUDENTS RE: STUDY</h2>
+	<div class="details-container" style="text-align:left; width:80%" align="left" width="80%">
+		<p class="notice-details" style="margin:0 6px 0 0; display:inline-block; font-family:Courier New; font-size:15px; font-weight:400">EKAI </p>
+	</div>
+
+	<p class="notice-description" style="margin:0; margin-top:15px; width:98%" width="98%">Please use the Study Sign-In goggle doc if you are on a school site during your study. You are required to come to the Student Reception to sign out if you are leaving the school grounds then sign back when you return.<br><br>You are required to attend assembly and Yr 13 Dean's assembly then sign out afterwards. On Wednesday pm those students that have study P4 must sign out. All other students are not required to sign out from lunch time.<br><br>Students - can only sign out/in for yourself and not for another student. Also notify the Office Ladies if you are signing out for anything other than study.<br><br></p>
+    <div style="text-align: right;"><a href="mailto:ekairuna@newlands.school.nz?subject=Year%2013%20Students%20Re:%20Study" style="color:inherit; text-decoration:none">
+    <img class="icon" style="display:inline-block; height:23px; margin-left:auto; margin-top:4px; margin-bottom:2px" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png" height="23"></a>
+    <a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210415T133200Z%2F20210415T133200Z&amp;text=Year%2013%20Students%20Re:%20Study&amp;location=&amp;details=" target="_blank" style="color:inherit; text-decoration:none"><img class="icon" style="display:inline-block; height:30px; margin-left:5px; margin-top:4px" src="https://purepng.com/public/uploads/large/purepng.com-calendar-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-721522597143e6f1s.png" height="30"></a>
+    </div>
+</div>
+</div>
+
+<div class="bottomsection" style="background:#3e3874; margin-left:-6%; padding-bottom:1%; padding-top:1%; width:106%" width="106%">
+	<a href="https://notices.newlands.school.nz/faq" style="color:inherit; text-decoration:none"><p class="footer-text" style="margin:0; border-left:1px solid white; color:white; display:inline-block; font-family:Arial; font-size:12px; margin-bottom:3px; margin-left:2%; margin-right:5px; margin-top:3px; padding-left:1%">FAQ</p></a>
+	<a href="https://notices.newlands.school.nz/unsubscribe" style="color:inherit; text-decoration:none"><p class="footer-text" style="margin:0; border-left:1px solid white; color:white; display:inline-block; font-family:Arial; font-size:12px; margin-bottom:3px; margin-left:2%; margin-right:5px; margin-top:3px; padding-left:1%">Unsubscribe</p></a>
+</div>
+</body>
 
 
